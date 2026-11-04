@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tripdays"
+version = "0.1.0"
+description = "Multi-leg trip day planner: nights, gaps, overlaps and turnovers"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+authors = [{name = "Moco"}]
+
+[project.scripts]
+tripdays = "tripdays.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
